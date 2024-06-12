@@ -1,0 +1,553 @@
+@import "_elements.less";
+
+.font-face(@family: 'narkis', @file-name: 'NarkisBlock-Condensed_MFW', @font-weight-name: 'Regular', @font-weight-number: 400, @unicode-range: '');
+.font-face(@family: 'narkis', @file-name: 'NarkisBlockCon-Thin_MFW', @font-weight-name: 'Thin', @font-weight-number: 400, @unicode-range: '');
+.font-face(@family: 'narkis', @file-name: 'NarkisBlockCon-Bold_MFW', @font-weight-name: 'Bold', @font-weight-number: 400, @unicode-range: '');
+.font-face(@family: 'oswald', @file-name: 'oswald-v14-cyrillic-700', @font-weight-name: 'Bold', @font-weight-number: 400, @unicode-range: '');
+.font-face(@family: 'oswald', @file-name: 'oswald-v14-cyrillic-regular', @font-weight-name: 'Regular', @font-weight-number: 400, @unicode-range: '');
+.font-face(@family: 'arimo', @file-name: 'arimo-v13-hebrew-regular', @font-weight-name: 'Regular', @font-weight-number: 400, @unicode-range: '');
+
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* start reset*/
+* {
+  flex: 0 1 auto;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+select {
+  opacity: 0;
+  font-size: 16px !important;
+  text-transform: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  padding: 0;
+  font-weight: normal;
+}
+
+td {
+  padding: 0;
+}
+
+button {
+  color: @colorGrayDark;
+  min-width: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  transition: all 0.3s linear;
+}
+
+a {
+  color: @colorGrayDark;
+  text-decoration: none;
+  background-color: transparent;
+  transition: all 0.3s linear;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: @colorGrayDark !important;
+  }
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+b,
+strong {
+  // font-family: @font-bold;
+  font-weight: normal;
+}
+
+textarea,
+input,
+button {
+  outline: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+
+textarea,
+input {
+  border-radius: 0;
+  padding: 0;
+
+  &:not([type="checkbox"]):not([type="radio"]) {
+    -webkit-appearance: none;
+  }
+}
+
+input {
+  line-height: normal;
+  outline: none;
+  border-radius: 0;
+  padding: 0;
+
+  &[type="radio"],
+  &[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  &.emailInput,
+  &[name="email"],
+  &.typeEmail,
+  &[type="email"],
+  &.typeNumber,
+  &[type="number"] {
+    direction: ltr !important;
+    text-align: left;
+  }
+
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+
+  }
+
+  &[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+  }
+
+  &[type="search"]::-webkit-search-cancel-button,
+  &[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  &[type="button"],
+  &[type="reset"],
+  &[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
+
+  &.emailInput,
+  &.typeEmail,
+  &[type="email"],
+  &[name="email"] {
+    direction: ltr !important;
+    text-align: right;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  &:not([type="checkbox"]):not([type="radio"]) {
+    -webkit-appearance: none;
+  }
+
+  &[disabled] {
+    -webkit-text-fill-color: rgba(0, 0, 0, 1);
+  }
+}
+
+textarea {
+  outline: none;
+  border-radius: 0;
+  padding: 0;
+  resize: none;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: block;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  width: auto;
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  border-bottom: none;
+}
+
+html {
+  direction: ltr;
+  height: 100%;
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  & * {
+
+    &:focus,
+    &.focus {
+      outline: none !important;
+    }
+  }
+}
+
+body {
+  height: 100%;
+  direction: rtl;
+  margin: 0;
+  font-size: 14px;
+  font-family: arial, serif;
+  text-align: right;
+  color: @colorGray;
+  background: @colorWhite;
+  -ms-overflow-style: scrollbar;
+
+  //*:focus {
+  //  outline: #e15760 dotted 3px !important;
+  //}
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+label {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+button.btn {
+  display: block;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button.btnKeyboard {
+  display: none;
+}
+
+.u {
+  text-decoration: underline;
+}
+
+.ltr {
+  direction: ltr;
+  display: inline-block;
+}
+
+app-root,
+app-layout,
+app-header,
+app-footer,
+app-home,
+app-wizard-stepper,
+app-step-page-wrapper,
+app-stepper-buttons {
+  display: block;
+}
+
+app-root {
+  .textReset();
+}
+
+[disabled="disabled"],
+[disabled],
+.disabled {
+  pointer-events: none;
+}
+
+bootstrap-select.btn-group .dropdown-toggle:focus {
+  outline: none !important;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+
+  &-focusable:active,
+  &-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+.hidden,
+.hide {
+  display: none !important;
+}
+
+.fade {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s linear, visibility 0.3s linear;
+
+  &.show,
+  &.in {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.tab-content {
+  >.tab-pane {
+    display: none;
+  }
+
+  >.active {
+    display: block;
+  }
+}
+
+.panel {
+  margin-bottom: 0;
+  background: none;
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none;
+}
+
+.noCursor {
+  cursor: default;
+}
+
+.dropdown-backdrop {
+  position: static;
+}
+
+.icon {
+  user-select: none;
+}
+
+.carouselContainer {
+  .item:not(.slick-slide) {
+    +.item {
+      display: none;
+    }
+  }
+
+  &.slickNoSlide {
+    left: 0 !important;
+    right: 0 !important;
+
+    .slick-track {
+      width: 100% !important;
+      text-align: center !important;
+      transform: inherit !important;
+      white-space: nowrap;
+    }
+
+    .slick-slide {
+      float: none !important;
+      display: inline-block !important;
+      white-space: normal;
+    }
+  }
+
+  .slick-slide {
+    float: right;
+  }
+}
+
+.radio,
+.checkbox {
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+}
+
+.posR {
+  position: relative;
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+
+@media (max-width: @screen-xs-max) {
+
+  /// max width 767
+  .visible-xs {
+    display: block !important;
+  }
+
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+
+  /// 768 - 991
+  .visible-sm {
+    display: block !important;
+  }
+
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: @screen-md) and (max-width: @screen-md-max) {
+
+  /// 992 - 1199
+  .visible-md {
+    display: block !important;
+  }
+
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: @screen-lg) {
+
+  /// min 1200
+  .visible-lg {
+    display: block !important;
+  }
+
+  .hidden-lg {
+    display: none !important;
+  }
+}

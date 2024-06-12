@@ -1,0 +1,10 @@
+<div class="stepsNavigationBtns">
+  <button (click)="goForward()" type="button" class="btn btn--yellow btn--next"
+    [ngClass]="{ 'btn--opacity': stepInvalid }" [disabled]="!hasNextStep">
+    {{ nextButtonText }}
+  </button>
+  <button (click)="goBack()" type="button" class="btn btn--link btn--prev" [disabled]="!hasBackStep"
+    *ngIf="hasBackStep">
+    {{ backButtonText }}
+  </button>
+</div>

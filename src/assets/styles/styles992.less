@@ -1,0 +1,107 @@
+@import "./partials/_elements.less";
+
+@media print,
+screen and (min-width: @screen-sm-max) {
+
+  .mobile-img {
+    display: none;
+  }
+
+  .main-section {
+    justify-content: space-between;
+    height: auto;
+    // flex-wrap: wrap;
+  }
+
+  //   .circle-wrapper {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+
+  //     img {
+  //       width: 4.5rem;
+  //     }
+  //   }
+
+  //   .btn {
+  //     font-size: 1.8rem;
+  //     padding: 1rem 0;
+  //     margin: 1.5rem 0;
+  //   }
+
+  .no-eligibility-page {
+    // .mobile-img {
+    //   margin: 6rem auto;
+    // }
+  }
+
+  .simple-dailog-header {
+    text-align: right;
+  }
+
+  .icon-dialog {
+    .simple-dailog-header {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+
+  //   .circle-wrapper {
+  //     width: 10rem;
+  //     height: 10rem;
+  //     margin: 2rem auto;
+
+  //     img {
+  //       width: 5.5rem;
+  //       margin-top: -1rem;
+  //     }
+  //   }
+
+  .wizard-section {}
+
+  .wizard {
+    width: 100%;
+
+    .mat-horizontal-content-container {
+      padding: 2rem 3rem;
+    }
+  }
+
+  .step-info-wrapper {
+    padding-right: 10rem;
+    display: block;
+  }
+
+  .step-header {
+    font-size: 6rem;
+    text-align: right;
+
+    &:after {
+      margin-right: 0;
+    }
+  }
+
+  .step-message {
+    padding: 2rem;
+  }
+
+  .img-section {
+    order: 0;
+    text-align: center;
+    display: block;
+    padding: 12rem 0;
+    padding-right: 10rem;
+  }
+
+  .steps-summary-list {
+    .step-subheader {
+      font-size: 18px;
+      margin: 0px;
+    }
+
+    .description {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+  }
+}

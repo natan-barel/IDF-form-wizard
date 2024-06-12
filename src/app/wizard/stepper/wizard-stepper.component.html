@@ -1,0 +1,51 @@
+<!-- <section class="wizard-section">
+  <div class="container-fluid">
+    <nz-steps #stepper [nzCurrent]="stepper.nzCurrent" (nzIndexChange)="moveStepper($event)">
+      <nz-step *ngFor="let step of steps | async; let i= index " nzTitle="{{i+1 | numberToText}}"
+        nzIcon="{{step.icon}}">
+      </nz-step>
+    </nz-steps>
+    <ng-container *ngFor="let step of steps | async; let i= index ">
+      <div class="steps-content"
+        [ngClass]="{ 'hideStep': stepper.nzCurrent != i , 'steps-content--fadeRight': fadeRight , 'steps-content--fadeLeft': fadeLeft } ">
+        <app-step-page-wrapper [stepIndex]="i" [stepsLength]="(steps | async)?.length" [item]="step"
+          (onGoForward)="goForward(stepper)" (onGoBack)="goBack(stepper)" (setStepperIndex)="moveStepper($event)">
+        </app-step-page-wrapper>
+      </div>
+    </ng-container>
+  </div>
+</section> -->
+
+<section class="wizard-section">
+  <!-- <form class="stepperWrapper" [formGroup]="simulationForm"> -->
+  <app-wave-animation class="waveComponent"></app-wave-animation>
+  <div class="container-fluid">
+    <mat-horizontal-stepper linear #stepper class="wizard" [selectedIndex]="stepper.selectedIndex">
+      <!-- <mat-step *ngFor="let step of steps | async; let i = index" [stepControl]="stepControl(i)"> -->
+      <mat-step *ngFor="let step of steps | async; let i = index">
+        <ng-template matStepLabel>
+          <div>
+            <span class="stepNumber" [ngClass]="{
+                check:
+                  stepper.selectedIndex !== i &&
+                  stepper.selectedIndex > i
+              }">{{ i + 1 }}</span>
+          </div>
+        </ng-template>
+        <!-- <ng-template matStepLabel>
+          <div>
+            <span class="stepNumber" [ngClass]="{
+                check:
+                  stepControl(i).valid &&
+                  stepper.selectedIndex !== i &&
+                  stepper.selectedIndex > i
+              }">{{ i + 1 }}</span>
+          </div>
+        </ng-template> -->
+        <app-step-page-wrapper [stepIndex]="i" [stepsLength]="(steps | async)?.length" [item]="step"
+          (onGoForward)="goForward(stepper)" (onGoBack)="goBack(stepper)"
+          (setStepperIndex)="moveStepper($event)"></app-step-page-wrapper>
+      </mat-step>
+    </mat-horizontal-stepper>
+  </div>
+</section>

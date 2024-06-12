@@ -1,0 +1,64 @@
+<!-- <section
+  class="step-section"
+  [formGroup]="FormGroupRef"
+  *ngIf="FormGroupRef && umbracoData | async"
+> -->
+<section class="step-section">
+  <div class="step-selction-wrapper">
+    <div>
+      <h2 class="step-header">
+        <!-- {{ (umbracoData | async)?.verifyEducationDataScreenTitle }} -->
+      </h2>
+      <div class="circle-wrapper">
+        <img assetsRouteDirective src="./assets/img/books.png" alt="תמונת של חיילת" />
+      </div>
+      <!-- <p class="description" *ngFor="let item of verifyEducationDataScreenInstructionText">
+        {{ item }}
+      </p> -->
+      <!-- <p class="description" *ngIf="!(mesharetData | async)?.FinishedStudiesType?.ID">
+        לא קיימים לימודים קודמים
+      </p> -->
+      <p class="description">
+        לא קיימים לימודים קודמים
+      </p>
+    </div>
+    <div class="previous-education-wrapper">
+      <!-- <div class="previous-education-wrapper" *ngIf="(mesharetData | async)?.FinishedStudiesType?.ID"> -->
+      <h3 class="step-subheader">
+        <!-- {{ (mesharetData | async)?.FinishedStudiesType?.Name }} -->
+      </h3>
+      <p class="description">
+        <!-- {{ (mesharetData | async)?.FinishedCourseOfStudy?.Name }} -->
+      </p>
+      <p class="description">
+        <!-- {{ (mesharetData | async)?.FinishedSecondaryCourseOfStudy?.Name }} -->
+      </p>
+      <p class="description">
+        <!-- {{ (mesharetData | async)?.FinishedInstitute?.Name }} -->
+      </p>
+
+    </div>
+    <mat-radio-group class="appMatOverride radioGroupVertical" aria-label="" (change)="onSelectionChange($event)">
+      <mat-radio-button class="textContent--semiBold textContent--blackTextColor">
+        <!-- {{ (umbracoData | async)?.verifyEducationDataScreenDataUpdatedRadio }} -->
+      </mat-radio-button>
+      <mat-radio-button class="textContent--semiBold textContent--blackTextColor">
+        <!-- {{ (umbracoData | async)?.verifyEducationDataScreenDataNotUpdatedRadio }} -->
+      </mat-radio-button>
+    </mat-radio-group>
+    <div *ngIf="isWarningShown">
+      <p class="description" *ngFor="let item of verifyEducationDataScreenDataNotUpdatedInstructionText ">
+        <!-- {{ item }} -->
+      </p>
+      <button type="button" class="btn btn--link" (click)="openInfoDialog()">
+        <!-- {{ (umbracoData | async)?.verifyEducationDataScreenDataNotUpdatedLink }} -->
+      </button>
+    </div>
+    <app-stepper-buttons [hasBackStep]="hasBack()" [hasNextStep]="hasNext()" (onStepGoBack)="goToBackStep()"
+      (onStepGoNext)="submit()">
+    </app-stepper-buttons>
+  </div>
+  <div class="step-info-wrapper">
+    <img assetsRouteDirective src="./assets/img/student.png" alt="" class="pic" />
+  </div>
+</section>

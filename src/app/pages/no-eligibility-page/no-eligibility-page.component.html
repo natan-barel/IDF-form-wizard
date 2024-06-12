@@ -1,0 +1,28 @@
+<!-- <section class="no-eligibility-page page-container" *ngIf="umbracoData | async"> -->
+<section class="no-eligibility-page page-container">
+  <div class="container-fluid col-14">
+    <div class="main-section">
+      <div class="content-section">
+        <div class="circle-wrapper">
+          <img assetsRouteDirective src="./assets/img/attention.png" alt="תמונת של חיילת" />
+        </div>
+        <h3 class="step-subheader">
+          <!-- {{ (umbracoData | async)?.noEnterScreenTitle }} -->
+        </h3>
+        <p class="textContent" *ngFor="
+            let item of noEnterScreenDescriptionText
+          ">
+          {{ item }}
+        </p>
+        <a href="https://prat.idf.il" class="btn btn--yellow btn--limited-wide btn--rightOneButton">
+          <!-- {{ (umbracoData | async)?.noEnterScreenBackBtn }} -->
+        </a>
+      </div>
+      <div class="img-section">
+        <div class="img-container">
+          <img assetsRouteDirective src="./assets/img/welcome.png" alt="תמונת של חיילת" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

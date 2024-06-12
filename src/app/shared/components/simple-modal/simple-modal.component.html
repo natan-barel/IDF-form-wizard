@@ -1,0 +1,15 @@
+<div class="simple-dialog">
+  <button type="button" mat-dialog-close class="close-btn"></button>
+  <h2
+    *ngIf="data.header"
+    [ngClass]="data.headerClass"
+    class="simple-dailog-header"
+  >
+    {{ data.header }}
+  </h2>
+  <div class="simple-dailog-content">
+    <p *ngFor="let item of data.content">
+      {{item}}
+    </p>
+  </div>
+</div>

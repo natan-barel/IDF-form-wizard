@@ -1,0 +1,23 @@
+{
+  "IsValid": true,
+  "Content": [
+    {
+      "ID": 7,
+      "Name": "הנדסת תוכנה",
+      "ScholarshipOptions": [
+        { "Sum": 1000.0, "AdditionalServingDays": 10 },
+        { "Sum": 4000.0, "AdditionalServingDays": 40 }
+      ]
+    },
+    {
+      "ID": 8,
+      "Name": "הנדסת אלקטרוניקה",
+      "ScholarshipOptions": [
+        { "Sum": 1000.0, "AdditionalServingDays": 20 },
+        { "Sum": 2000.0, "AdditionalServingDays": 60 },
+        { "Sum": 5000.0, "AdditionalServingDays": 100 }
+      ]
+    }
+  ],
+  "Properties": {}
+}

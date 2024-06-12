@@ -1,0 +1,41 @@
+<!-- <section class="home-page page-container" *ngIf="umbracoData | async"> -->
+<section class="home-page page-container">
+  <div class="container-fluid col-14">
+    <div class="step-section">
+      <div class="content-section">
+        <h1 class="step-header">
+          <!-- {{ (umbracoData | async)?.firstScreenTitle }} -->
+        </h1>
+        <div class="mobile-img">
+          <img assetsRouteDirective src="./assets/img/welcome.png" alt="תמונת של חיילת" />
+        </div>
+        <h3 class="step-subheader">
+          <!-- {{ (umbracoData | async)?.firstScreenDescriptionTitle }} -->
+        </h3>
+        <ul class="steps-list">
+          <li class="step-item" *ngFor="
+              let item of firstScreenDescriptionText
+            ">
+            {{ item }}
+          </li>
+        </ul>
+        <h3 class="step-subheader">
+          <!-- {{ (umbracoData | async)?.firstScreenInstructionTitle }} -->
+        </h3>
+        <ul class="bullets-list">
+          <li class="bullets-item" *ngFor="let item of firstScreenInstructionText">
+            {{ item }}
+          </li>
+        </ul>
+        <button type="button" class="btn btn--yellow" (click)="gotToApplication()">
+          להתחיל
+        </button>
+      </div>
+      <div class="img-section">
+        <div class="img-container">
+          <img assetsRouteDirective src="./assets/img/welcome.png" alt="תמונת של חיילת" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

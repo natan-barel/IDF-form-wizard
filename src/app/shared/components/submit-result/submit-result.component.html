@@ -1,0 +1,20 @@
+<section class="step-section submit-result-page">
+  <div class="step-selction-wrapper centered-content">
+    <div class="circle-wrapper">
+      <img src="/ClientBundledApps/tohash/assets/img/send.png" alt="" />
+    </div>
+    <h3 class="step-subheader">
+      {{ (umbracoData | async)?.EndScreenTitle }}
+    </h3>
+    <p class="description" *ngFor="let item of EndScreenText">
+      {{ item }}
+    </p>
+    <a
+      [href]="(umbracoData | async)?.EndScreenButtonLink"
+      target="_blank"
+      class="btn btn--yellow btn--limited-wide btn--rightOneButton"
+    >
+      {{ (umbracoData | async)?.EndScreenButton }}
+    </a>
+  </div>
+</section>

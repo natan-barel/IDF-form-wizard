@@ -1,0 +1,27 @@
+<div class="simple-dialog icon-dialog">
+  <div class="dialog-icon circle-wrapper">
+    <img
+      assetsRouteDirective
+      src="./assets/img/{{ data.iconName }}.png"
+      alt=""
+    />
+  </div>
+  <h2 class="simple-dailog-header centered-content">{{ data.header }}</h2>
+  <div class="simple-dailog-content">
+    {{ data.content }}
+  </div>
+  <a *ngIf="data.link" class="btn btn--link" [href]="data.link.href">{{
+    data.link.text
+  }}</a>
+  <div class="modal-btns" *ngIf="data.buttons">
+    <button
+      *ngFor="let btn of data.buttons"
+      type="button"
+      [ngClass]="btn.cssClass"
+      class="btn btn--limited-wide"
+      [mat-dialog-close]="btn.actions.close"
+    >
+      {{ btn.label }}
+    </button>
+  </div>
+</div>

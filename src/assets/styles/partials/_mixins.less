@@ -1,0 +1,68 @@
+.keyboardFocus {
+  outline: 3px solid #000 !important;
+  outline-offset: -1px;
+}
+
+.placeholder(@color) {
+  &::-webkit-input-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+}
+
+.transitionMove() {
+  transition: all 0.3s linear;
+}
+
+.centerAbsolute() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerFlex() {
+  justify-content: center;
+  align-items: center;
+}
+
+.createOverlay(@color) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: @color;
+}
+
+.create-caret(@color, @size, @thinkness, @direction) {
+  width: @size;
+  height: @size;
+  border-top: none;
+  border-left: none;
+  display: inline-block;
+  border-right: @thinkness solid @color;
+  border-bottom: @thinkness solid @color;
+}
+
+.HoverEffect() {
+  transform: scale(0.9);
+}
+
+.overflowY {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

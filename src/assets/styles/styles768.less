@@ -1,0 +1,111 @@
+@import "./partials/_elements.less";
+
+@media print,
+screen and (min-width: @screen-sm) {
+  .wizard {
+    width: 100%;
+  }
+
+  .img-container {
+    max-width: 400px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content-section {
+    max-width: 550px;
+  }
+
+  .main-header {
+    font-size: 7rem;
+
+    &:after {
+      height: 0.3rem;
+      float: right;
+    }
+  }
+
+  .steps-list {
+    flex-direction: row;
+
+    .step-item {
+      padding: 0px 4rem 5px;
+      font-size: 2rem;
+
+      &:before {
+        font-size: 4rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .step-subheader {
+    font-size: 24px;
+    text-align: right;
+  }
+
+  .steps-summary-list {
+    justify-content: space-between;
+  }
+
+  .no-eligibility-page,
+  .submit-result-page {
+
+    .textContent,
+    .description {
+      text-align: right;
+    }
+
+    .circle-wrapper {
+      width: 175px;
+      height: 175px;
+
+    }
+  }
+
+  .btn {
+    &&--rightOneButton {
+      max-width: 366px;
+      padding-top: 20px;
+      font-size: 18px;
+      height: 60px;
+      margin: inherit;
+      margin-top: 52px;
+    }
+  }
+
+  .container-fluid {
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    &.col-14 {
+      padding: 5.5rem 5rem 5rem 5rem;
+    }
+  }
+
+  .step-header {
+    font-size: 4.2rem;
+  }
+
+  .step-table {
+
+    .input {
+      font-size: 2.4rem;
+    }
+
+    .textContent {
+      font-size: 2.4rem;
+    }
+  }
+
+  .step-message {
+    &:after {
+      right: -2rem;
+    }
+  }
+}

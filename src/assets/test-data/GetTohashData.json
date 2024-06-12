@@ -1,0 +1,307 @@
+{
+  "IsValid": true,
+  "Content": {
+    "UmbracoData": {
+      "metaDescription": "",
+      "metaKeywords": "",
+      "metaTitle": "",
+      "pageTitle": "",
+      "umbracoNaviHide": false,
+      "firstScreenTitle": "לימודים תוך כדי שירות",
+      "firstScreenDescriptionText": [
+        "הגשת הבקשה ללימודים תוך כדי שירות",
+        "מילוי פרטים ואישור הבקשה"
+      ],
+      "firstScreenInstructionText": [
+        "דרכון",
+        "אישור רפואי",
+        "אישור טיסה",
+        "אישור מזכירות"
+      ],
+      "firstScreenDescriptionTitle": "טופס לימודים תוך כדי שירות",
+      "firstScreenInstructionTitle": "נא הכן מראש",
+      "noEnterScreenTitle": "מצטערים אין לך זכאות לבקדת לימודים תוך כדי שירות",
+      "noEnterScreenBackBtn": "חזרה לאיזור האישי",
+      "noEnterScreenDescriptionText": [
+        "התהליך זמין למשרתים טקסט הסבר כלשהו הסבר על מי זכאי לבקש לימודים תוך כדי שירות",
+        "עוד הסבר"
+      ],
+      "startProcessScreenPopupNextNewRequest": "בקשה חדשה",
+      "startProcessScreenInstructionText": [
+        "זהו תהליך לבקשת יציאה ללימודים בזמן השירות.בתהליך תתבקש לדווח על סוג הלימודים המבוקש. המוסד בו ילמדו, ותאריכי התחלה וסיום של הלימודים."
+      ],
+      "startProcessScreenCommandingOfficerTitle": "יש לבצע תהליך זה לאחר אישור הלימודים מול מפקדיך",
+      "startProcessScreenPopupQuestion": ["להמשיך למלא את הטיוטה?"],
+      "startProcessScreenPopupTitle": "יש לך טיוטת בקשה שמורה במערכת",
+      "startProcessScreenPopupNextWithDraft": "המשך לפי טיוטה",
+      "startProcessScreenNext": "המשך",
+      "startProcessScreenTitle": "בקשה ללימודים תוך כדי שירות",
+      "startProcessScreenCommandingOfficerInstructionText": [
+        "תתבקש להצהיר על כך בהמשך התהליך. דיווח כוזב בנושא יגרור צעדים משמעתיים."
+      ],
+      "verifyEducationDataScreenNext": "המשך",
+      "verifyEducationDataScreenDataUpdatedRadio": "הנתונים מעודכנים",
+      "verifyEducationDataScreenInstructionText": [
+        "נטע היקרה,",
+        "זהו נתון ההשכלה האחרון במערכת. אנא ודאי שהנתון עדכני."
+      ],
+      "verifyEducationDataScreenTitle": "פרטי לימודים קיימים",
+      "verifyEducationDataScreenDataNotUpdatedLink": "למידע נוסף",
+      "verifyEducationDataScreenDataNotUpdatedRadio": "הנתונים לא מעודכנים",
+      "verifyEducationDataScreenDataNotUpdatedPopupTitle": "פופאפ תוכן מנוהל",
+      "verifyEducationDataScreenDataNotUpdatedPopupText": [
+        "תוכן כלשהו של הפופאפ.",
+        "הסבר למה כדאי לעדכן את הפרטים בשלישות שלך בהקדם - זה יכול להשפיע על אישור הבקשה ועל תנאי שירות שלך",
+        "המשך פופאפ"
+      ],
+      "verifyEducationDataScreenDataNotUpdatedInstructionText": [
+        "אפשר להמשיך בהגשת הבקשה, אבל כדאי לעדכן את הפרטים בשלישות שלך בהקדם - זה יכול להשפיע על אישור הבקשה ועל תנאי שירות שלך",
+        "עוד מידע למה הנתונים לא מעודכנים"
+      ],
+      "studyPolicyScreenText1": [
+        "במידה והנך ברמפ\"א א' ומעלה, הנך צפוי לשנמוך רמ\"פ בעקבות הלימודים",
+        "עוד טקסט"
+      ],
+      "studyPolicyScreenTitle": "לידיעתך, מדיניות הלימודים של צה\"ל",
+      "studyPolicyScreenBottomLink": "www.ynet.co.il",
+      "studyPolicyScreenLink3": "www.ynet.co.il",
+      "studyPolicyScreenSubTitle1": "שנמוך רמ\"פ",
+      "studyPolicyScreenLinkText1": "לפרטים נוספים",
+      "studyPolicyScreenSubTitle3": "מלגה בגין לימודים",
+      "studyPolicyScreenLink2": "www.ynet.co.il",
+      "studyPolicyScreenSubTitle2": "ניכוי ימי חופשה שנתית",
+      "studyPolicyScreenLinkText2": "לפרטים נוספים",
+      "studyPolicyScreenNext": "המשך",
+      "studyPolicyScreenLink1": "www.ynet.co.il",
+      "studyPolicyScreenText2": [
+        "במידה והנך נעדר מהשירות ליום מלא מהשבוע ללימודים, הנך צפוי לניכוי ימי חופשה שנתית"
+      ],
+      "studyPolicyScreenText3": [
+        "הנך זכאי לבקש מלגה בגין לימודי התוכש",
+        "עוד טקסט"
+      ],
+      "studyPolicyScreenBottomLinkText": "למדיניות הלימודים המלאה של צהל",
+      "studyPolicyScreenLinkText3": "לפרטים נוספים",
+      "studyPolicyScreenBack": "חזרה",
+      "studyDetailsScreenContinueStudiesTopSectionButton": "אני רוצה לדווח על לימודים חדשים",
+      "studyDetailsScreenStudyDurationLessThanYearTooltip": "תאריך סיום הלימודים טולטיפ",
+      "studyDetailsScreenStudyDurationLessThanYear": "שנה או פחות1",
+      "studyDetailsSaveDraftButton": "שמירה כטיוטה",
+      "studyDetailsScreenNext": "המשך",
+      "studyDetailsScreenStudyTypeQuestion": "מילוי פרטי לימודים מבוקשים",
+      "studyDetailsSaveDraftGoToMainProfile": "יציאה לאיזור האישי",
+      "studyDetailsScreenStudyDurationQuestion": "מה משך הלימודים הצפוי",
+      "studyDetailsScreenStartDateQuestionTooltip": "תאריך תחילת הלימודים טולטיפ",
+      "studyDetailsScreenBack": "חזרה",
+      "studyDetailsScreenStudyDurationLessThanYearTitle": "תאריך סיום הלימודים",
+      "studyDetailsScreenStudyDurationOverAYearTitle": "לתשומת לבך",
+      "studyDetailsScreenStudyDurationOverAYearText": [
+        "אישור הלימודים תקף לשנה אחת בלבד - עד",
+        "בסיום השנה יש להגיש בקשה חדשה עבור המשך הלימודים"
+      ],
+      "studyDetailsSaveDraftTitle": "שמרנו לך טיוטה",
+      "studyDetailsSaveDraftNext": "המשך תהליך",
+      "studyDetailsScreenStartDateQuestion": "תאריך תחילת הלימודים",
+      "studyDetailsSaveDraftText": [
+        "רוצה להמשיך בתהליך?",
+        "רוצה לא להמשיך בתהליך?",
+        "בחר את מה שמתאים לך"
+      ],
+      "studyDetailsScreenStudyDurationOverAYear": "מעל שנה1",
+      "studyDetailsScreenContinueStudiesTopSectionTitle": "ממשיכה בלימודים הקיימים?",
+      "studyDetailsScreenContinueStudiesTopSectionText": [
+        "לפי המערכת שלנו, יש לימודים שהתחלת וטרם הסתיימו.",
+        "בבקשה עברי על הנתונים, ועדכני במידת הצורך.",
+        "או שאל תעדכני. אנחנו נדאג לך"
+      ],
+      "studyDetailsScreen2AbsenceDivisionOtherPopupText": [
+        "טקסט שבתוך הפופאפ",
+        "המשך טקסט בתוך הפופאפ"
+      ],
+      "studyDetailsScreen2SecondaryCourseOfStudyCancelText": "ביטול",
+      "studyDetailsScreenAlreadyHasPrevStudiesPopupEditDateButton": "ערוך תאריך",
+      "studyDetailsScreen2AbsenceDivisionOtherDaysTitle": "מספר הימים בהם תעדרי מהשירות",
+      "studyDetailsScreen2CourseOfStudy": "מגמת לימודים ראשית",
+      "studyDetailsScreen2SecondaryCourseOfStudyTitle": "מגמת לימודים משנית",
+      "studyDetailsScreen2Back": "חזרה",
+      "studyDetailsScreen2SecondaryCourseOfStudy": "מגמת לימודים משנית",
+      "studyDetailsScreen2LearningInstitute": "שם מוסד הלימודים",
+      "studyDetailsScreenAlreadyHasPrevStudiesPopupTitle": "קיימים לימודים נוספים בתאריך שבחרת",
+      "studyDetailsScreenAlreadyHasPrevStudiesPopupText": [
+        "לפי הנתונים במערכת, את רשומה ללימודים ב[]",
+        "שמסתיימים בתאריך []",
+        "לא ניתן לאפשר שני מופעי לימודים במקביל - באפשרותך לשנות את התאריכים שהגדרת, לא לבחור לסיים את הלימודים ב[] בתאריך []"
+      ],
+      "studyDetailsScreen2AbsenceDivision": "היעדרות משירות",
+      "studyDetailsScreen2Next": "המשך",
+      "studyDetailsScreen2AbsenceDivisionOtherTextLink": "עוד מידע על שעות ההיעדרות",
+      "studyDetailsScreenAlreadyHasPrevStudiesPopupNext": "המשך עם התאריך שנבחר",
+      "studyDetailsScreen2AbsenceDivisionOtherHoursTitle": "סה\"כ שעות העדרות שבועיות",
+      "studyDetailsScreen2AbsenceDivisionOtherTitle": "באיזו מסגרת תעדרי מהשירות?",
+      "studyDetailsScreen2AbsenceDivisionOtherText": [
+        "אנא רשמי מספר שעות ההיעדרות הכולל, ואת מספר הימים בשבוע על פניהם יתחלקו השעות. יום היעדרות מלא שווה ערך ל - 9 שעות."
+      ],
+      "commandingOfficerDeclarationScreenBackButton": "חזרה",
+      "commandingOfficerDeclarationScreenSaveDraftButton": "שמירה כטיוטה",
+      "commandingOfficerDeclarationScreenSaveDraftPopupGoToMainProfileButton": "יציאה לאזור האישי",
+      "commandingOfficerDeclarationScreenSaveDraftPopupText": ["אנא לחץ המשך"],
+      "commandingOfficerDeclarationScreenCBText": "קראתי ואני מאשר את ההמלצה",
+      "commandingOfficerDeclarationScreenSaveDraftPopupNextButton": "המשך בתהליך",
+      "commandingOfficerDeclarationScreenNextButton": "המשך",
+      "commandingOfficerDeclarationScreenText": [
+        "הנני מאשר באת כי",
+        "1. מפקדי בדרגת רס\"ן מסר את המלצתו בנוגע ללימודיי למקדי בדרגם אל\"ם.",
+        "2. מפקדי בדרגם אל\"ם אישר את לימודיי תוך כדי השירות.",
+        "הנני מודע לכך שההצהרה בדבר המלצה  ואישור מפקדיי המוסמכים תאומת אל מולם, וכי הצהרה כוזבת אודות המלצת ואישור הלימודים תגרור מענה משמעתי, בהתאם לפקודות הצבא.",
+        "בדיקה"
+      ],
+      "commandingOfficerDeclarationScreenTitle": "אישור המפקדים ליציאה ללימודים",
+      "commandingOfficerDeclarationScreenSaveDraftPopupTitle": "רוצה לשמור טיוטה",
+      "scholarshipRequestScreen2Text": [
+        "האם תקבלי מלגה עבור לימודים אלה מגורם אזרחי כלשהו?",
+        "האם לא תקבלי מלגה מגורם אזרחי כלשהו?"
+      ],
+      "scholarshipRequestScreen2SitizenScholarshipSum": "מה סכום המלגה שתקבלי?",
+      "scholarshipRequestScreen2SaveDraftTitle": "כותרת פופאפ",
+      "scholarshipRequestScreen2SaveDraftNextButton": "המשך 8",
+      "scholarshipRequestScreen2SaveDraftButton": "שמירה כטיוטה",
+      "scholarshipRequestScreen2HasNoSitizenScholarship": "לא8",
+      "scholarshipRequestScreen2HasSitizenScholarship": "כן8",
+      "scholarshipRequestScreen2Title": "מלגת הלימודים",
+      "scholarshipRequestScreen2NextButton": "המשך 8",
+      "scholarshipRequestScreen2BackButton": "חזרה 8",
+      "scholarshipRequestScreen2SaveDraftGoToMainProfile": "יציאה לאזור האישי 8",
+      "scholarshipRequestScreen2HasNoSitizenScholarshipText": [
+        "טקסט הסבר ארוך מאוד",
+        "ועוד אחד ארוך מאוד שמסביר על מלגה אזרחית ועל ההתחייבות ועל הלימודים ועל האוניברסיטה"
+      ],
+      "scholarshipRequestScreen2SaveDraftText": ["טקסט ארוך"],
+      "scholarshipRequestScreen3ServingEndDate": "תאריך תום השירות הנוכחי שלך הוא %",
+      "scholarshipRequestScreen3SaveDraftText": [
+        "טקסט ארוך",
+        "לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף קולהע צופעט למרקוח איבן איף, ברומץ כלרשט מיחוצים. קלאצי קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק."
+      ],
+      "scholarshipRequestScreen3DescriptionTitle": "לתשומת לבך%",
+      "scholarshipRequestScreen3SaveDraftTitle": "כותרת פופאפ טיוטה",
+      "scholarshipRequestScreen3SaveDraftGoToMainProfile": "יציאה לאזור האישי",
+      "scholarshipRequestScreen3DescriptionText": [
+        "בגין קבלת המלגה, ככל ותאושר לך ע\"י צה\"ל,",
+        "הנך תתחייב לשירות בקבע במסגרת התחייבות פתוחה, כקבוע במדיניות מחה\"ס ובהתאם לפקודות הצבא",
+        "יכול להיות שהשירות שלך יקוצר! %"
+      ],
+      "scholarshipRequestScreen3PopupText": [
+        "פופאפ הסבר עם טקסט ארוך מאוד %",
+        "הסבר על תאריך שירות נדרש",
+        "הסבר על המלגה"
+      ],
+      "scholarshipRequestScreen3SaveDraftNextButton": "המשך",
+      "scholarshipRequestScreen3ContinueWithoutScholarship": "אוותר על המלגה %",
+      "scholarshipRequestScreen3TableTitleDate": "תאריך שירות נדרש %",
+      "scholarshipRequestScreen3TableTitleSum": "סכום %",
+      "scholarshipRequestScreen3NextButton": "המשך",
+      "scholarshipRequestScreen3Title": "מלגת לימודים %",
+      "scholarshipRequestScreen3DescriptionLinkText": "למדיניות מחה\"ס בנוגע למלגות לימודים %",
+      "scholarshipRequestScreen3Text": [
+        "באפשרותך לבחור אחת מאפשרויות המלגה המוצעות עבורך, או לוותר על קבלת המלגה: %",
+        "או לא לבחור בכלל %"
+      ],
+      "scholarshipRequestScreen3BackButton": "חזרה",
+      "scholarshipRequestScreen3SaveDraftButton": "שמירת טיוטה",
+      "scholarshipRequestScreen1BackButton": "חזרה7",
+      "scholarshipRequestScreen1DraftPopupNextButton": "המשך7",
+      "scholarshipRequestScreen1DraftButton": "שמירת טיוטה7",
+      "scholarshipRequestScreen1DraftPopupGoToMainProfileButton": "יציאה לאזור האישי",
+      "scholarshipRequestScreen1DraftPopupTitle": "כותרת של פופאפ שמירת טיוטה",
+      "scholarshipRequestScreen1Title": "מלגת לימודים",
+      "scholarshipRequestScreen1GoToScholarshipProcess": "לתהליך בקשת מלגה",
+      "scholarshipRequestScreen1NextButton": "המשך 7",
+      "scholarshipRequestScreen1DraftPopupText": ["האם לשמור?"],
+      "scholarshipRequestScreen1Text": [
+        "האם תהיי מעוניינת לבדוק אפשרויות המלה המוצעות לך מצה\"ל?"
+      ],
+      "scholarshipRequestScreen1ContinueWithoutScholarship": "המשך ללא מלגה",
+      "noScholarshipSuggestionsScreenBackButton": "חזרה",
+      "noScholarshipSuggestionsScreenSaveDraftText": "טקסט",
+      "noScholarshipSuggestionsScreenSaveDraftGoToMainProfile": "יציאה לאזור האישי",
+      "noScholarshipSuggestionsScreenSaveDraftButton": "שמירה כטיוטה",
+      "noScholarshipSuggestionsScreenText": [
+        "סכום המלגה האזרחית שאת זכאית לה דבוה מהרגיל, לכן אין ברגע זה הצעות מלגה רלוונטיות עבורך",
+        "תוכלי לבדוק זכאותך שוב בעתיד, אם לא תתקבל המלגה האזרחית"
+      ],
+      "noScholarshipSuggestionsScreenSaveDraftNextButton": "המשך",
+      "noScholarshipSuggestionsScreenSaveDraftTitle": "כותרת פופאפ",
+      "noScholarshipSuggestionsScreenTitle": "מלגת לימודים",
+      "noScholarshipSuggestionsScreenNextButton": "המשך",
+      "summaryAndApprovalScreenEndDateText": "תאריך סיום הלימודים",
+      "summaryAndApprovalScreenSaveDraftTitle": "פופאפ טיוטה - כותרת",
+      "summaryAndApprovalScreenLearningInstituteText": "שם מוסד הלימודים",
+      "summaryAndApprovalScreenCommandingOfficerApprovalText": "התקבל אישור המפקד ליציאה ללימודים",
+      "summaryAndApprovalScreenWaivedScholarshipText": "משתמש ויתר על המלגה - טקסט",
+      "summaryAndApprovalScreenStudiesDurationText": "משך הלימודים",
+      "summaryAndApprovalScreenCourseOfStudyText": "מגמת לימוד ראשית",
+      "summaryAndApprovalScreenSecondaryCourseOfStudyText": "מגמת לימוד משנית",
+      "summaryAndApprovalScreenSelectedScholarshipTitle": "סכום מלגה המבוקשת",
+      "summaryAndApprovalScreenSubTitleStudies": "פרטי לימודים",
+      "summaryAndApprovalScreenTitle": "סיכום הבקשה e",
+      "summaryAndApprovalScreenStudiesTypeText": "סוג הלימודים המבוקש",
+      "summaryAndApprovalScreenWaivedScholarshipTitle": "משתמש ויתר על המלגה - כותרת משנה",
+      "summaryAndApprovalScreenAbsenceDivisionText": "היעדרות מהשירות",
+      "summaryAndApprovalScreenBackButton": "חזרה11",
+      "summaryAndApprovalScreenSelectedScholarshipCommitmentText": "התחייבות לשירות עד",
+      "summaryAndApprovalScreenSaveDraftNextButton": "פופאפ טיוטה - כפתור המשך",
+      "summaryAndApprovalScreenSendRequestButton": "הגשת הבקשה11",
+      "summaryAndApprovalScreenSaveDraftGoToMainProfile": "פופאפ טיוטה - יציאה לאזור האישי",
+      "summaryAndApprovalScreenCommandingOfficerApprovalTitle": "אישור מפקד",
+      "summaryAndApprovalScreenStartDateText": "תאריך תחילת הלימודים",
+      "summaryAndApprovalScreenStudiesDurationTextLessThanYearText": "תאריך סיום הקורס",
+      "summaryAndApprovalScreenSaveDraftButton": "שמירת טיוטה",
+      "summaryAndApprovalScreenStudiesDurationTextOverAYearText": "תאריך סיום האישור",
+      "summaryAndApprovalScreenSaveDraftText": ["פופאפ טיוטה - טקסט"],
+      "EndScreenTitle": "בקשתך ללימודים תוך כדי שירות נשלחה בהצלחה",
+      "EndScreenText": [
+        "תוכלי לבחון את סטטוס הבקשה בזמן אמת דרך אתר צהל בכל עת. לתשומת לבךת לכ גורם מוסמך שבקשתך נשלחה אליו לבחינה, ישנו מספר ימים מקסימלי עד להחלטת הגורם, מהיום שהבקשה נותבה אל הגורם.",
+        "במידה וישנה חריגה ממספר הימים בתחנה הנוכחית בה שוהה הבקשה, ניתן ליצור קשר עם הגורם המשאן ביחידתך על מנת לברר את סיבת העיכוב"
+      ],
+      "EndScreenButton": "לאיזור האישי",
+      "EndScreenButtonLink": "www.ynet.co.il"
+    },
+    "MesharetData": {
+      "MesharetID": "2170598",
+      "IsHasEligibilityForDuringServiceStudies": true,
+      "IsHasEligibilityForScholarship": true,
+      "LastCommunicationDate": "2021-08-13T00:00:00",
+      "PrevStudiesType": {
+        "ID": 2,
+        "Name": "הנדסה נסיון"
+      },
+      "PrevStudiesEndDate": "2020-11-09T00:00:00",
+      "PrevLearningInstitute": {
+        "ID": 3,
+        "Name": "טכניון"
+      },
+      "PrevCourseOfStudy": {
+        "ID": 2,
+        "Name": "קורס 33"
+      },
+      "PrevSecondaryCourseOfStudy": {
+        "ID": 3,
+        "Name": "קורס 2"
+      },
+      "FinishedStudiesType": {
+        "ID": 2,
+        "Name": "הנדסה נסיון"
+      },
+      "FinishedCourseOfStudy": {
+        "ID": 11,
+        "Name": "קורס בדיקות"
+      },
+      "FinishedSecondaryCourseOfStudy": null,
+      "FinishedInstitute": {
+        "ID": 2,
+        "Name": "אונ תל אביב"
+      }
+    },
+    "DraftData": null
+  },
+  "Properties": {}
+}

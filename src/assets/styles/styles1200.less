@@ -1,0 +1,24 @@
+@import "./partials/_elements.less";
+
+@media print,
+screen and (min-width: @screen-md-max) {
+  .main-section {
+    padding: 0 2rem;
+  }
+
+  .main-header {
+    text-align: right;
+  }
+
+  .wizard .mat-horizontal-content-container {
+    padding: 5.5rem 5rem 5rem 5rem;
+  }
+
+  // .wizard .mat-horizontal-stepper-header-container {
+  //   max-width: 57%;
+  // }
+
+  .wizard .mat-step-label {
+    font-size: 1rem;
+  }
+}

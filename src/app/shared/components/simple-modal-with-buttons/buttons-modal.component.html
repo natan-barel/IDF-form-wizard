@@ -1,0 +1,19 @@
+<div class="simple-dialog lamp-icon">
+  <h2 [ngClass]="data.headerClass" class="simple-dailog-header">
+    {{ data.header }}
+  </h2>
+  <div class="simple-dailog-content">
+    {{ data.content }}
+  </div>
+  <div class="modal-btns" *ngIf="data.buttons">
+    <button
+      *ngFor="let btn of data.buttons"
+      type="button"
+      [ngClass]="btn.cssClass"
+      class="btn btn--limited-wide"
+      [mat-dialog-close]="btn.actions.close"
+    >
+      {{ btn.label }}
+    </button>
+  </div>
+</div>

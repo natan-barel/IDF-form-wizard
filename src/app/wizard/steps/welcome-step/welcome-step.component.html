@@ -1,0 +1,40 @@
+<!-- <section class="step-section" *ngIf="umbracoData | async"> -->
+<section class="step-section">
+  <div class="step-selction-wrapper">
+    <div>
+      <h2 class="step-header">
+        <!-- {{ (umbracoData | async).startProcessScreenTitle }} -->
+      </h2>
+      <div class="circle-wrapper">
+        <img assetsRouteDirective src="./assets/img/education.png" alt="תמונת של חיילת" />
+      </div>
+      <!-- <p class="description" *ngFor="let item of startProcessScreenInstructionText">
+        {{ item }}
+      </p> -->
+    </div>
+
+    <div class="step-message">
+      <h3 class="step-message-header">
+        <!-- {{ (umbracoData | async).startProcessScreenCommandingOfficerTitle }} -->
+      </h3>
+      <!-- <p class="step-message-content description"
+        *ngFor="let item of startProcessScreenCommandingOfficerInstructionText">
+        {{ item }}
+      </p> -->
+    </div>
+    <!-- <app-stepper-buttons
+      nextButtonText="{{ (umbracoData | async).startProcessScreenNext }}"
+      [hasBackStep]="hasBack()"
+      [hasNextStep]="hasNext()"
+      (onStepGoBack)="goToBackStep()"
+      (onStepGoNext)="submit()"
+    >
+    </app-stepper-buttons> -->
+    <app-stepper-buttons [hasBackStep]="hasBack()" [hasNextStep]="hasNext()" (onStepGoBack)="goToBackStep()"
+      (onStepGoNext)="submit()">
+    </app-stepper-buttons>
+  </div>
+  <div class="step-info-wrapper">
+    <img assetsRouteDirective src="./assets/img/student.png" alt="" class="pic" />
+  </div>
+</section>

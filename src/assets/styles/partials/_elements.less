@@ -1,0 +1,232 @@
+// ******** Fonts ******** //
+@fontNarkisRegular: 'oswald-Regular', 'narkisRegular', sans-serif, arial;
+@fontNarkisThin: 'oswald-Regular', 'narkisThin', sans-serif, arial;
+@fontNarkisBold: 'oswald-700', 'narkisBold', sans-serif, arial;
+@fontArimoRegular: 'arimoRegular', sans-serif, arial;
+
+.font-face(@family, @file-name, @font-weight-name, @font-weight-number, @unicode-range) {
+  @path: "/assets/fonts";
+
+  @font-face {
+    font-family: '@{family}@{font-weight-name}';
+    font-style: normal;
+    font-weight: normal;
+    src: local('@{family} @{font-weight-name}'),
+    local('@{family}-@{font-weight-name}'),
+    url('@{path}/@{file-name}.woff2') format('woff2'),
+    url('@{path}/@{file-name}.woff') format('woff');
+
+    & when (@unicode-range ="unicodeRange") {
+      unicode-range: U+0040-005A, U+0061-007A, U+0026; //  only english characters + @ + & sign;
+    }
+  }
+}
+
+// viewports
+@gutter: 15px;
+
+@screen-xs: 320px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+@screen-xl: 1600px;
+
+@screen-xs-max: (@screen-sm - 1); // 767
+@screen-sm-max: (@screen-md - 1); // 1024
+@screen-md-max: (@screen-lg - 1); // 1199
+@screen-lg-max: (@screen-xl - 1); // 1599
+
+// colors
+@colorBlack: #000;
+@colorDarkBlack: #333333;
+@colorWhite: #fff;
+@colorGray: #554a4c;
+@colorGray2: #e4e4e4;
+@colorGray3: #343a49;
+@colorGrayDark: #13110c;
+@colorTextGrey: #333;
+@colorTextGreyDark: #231f20;
+@colorTextGreyLight: #626a77;
+@colorGrayBgLight: #f8f8f8;
+@colorGreyBorder: #d5d0d0;
+@colorGreyRadio: #e4e4e4;
+@colorRed: #ff0048;
+@colorYellow: #fde85e;
+@colorYellowRadio: #ffe860;
+@colorBlue: #5c6ca5;
+@violetBg: #f2f6fb;
+
+
+// ******** Fonts ******** //
+
+// ******** Mixins ******** // 
+
+.textReset() {
+  color: @colorDarkBlack;
+  font-size: 10px;
+  font-family: @fontArimoRegular;
+  direction: rtl;
+  text-align: right;
+}
+
+.createX(@colour, @size, @thickness: 2px) {
+  width: @size;
+  height: @size;
+  position: absolute;
+  display: inline-block;
+
+  &:after,
+  &:before {
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    position: absolute;
+    height: @thickness;
+    background-color: @colour;
+  }
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.placeholder(@color) {
+  &::-webkit-input-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+}
+
+.responsiveIframe(@width, @height) {
+  height: 0;
+  position: relative;
+  padding-bottom: (1 / (@width / @height)) * 100%;
+
+  >* {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+.arrowMove() {
+  transform: translate3d(-5px, 0, 0) scale(1.2);
+}
+
+.underlineAdd(@color, @height, @bottom) {
+  position: relative;
+  padding-bottom: @bottom;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: @height;
+    width: 0;
+    display: block;
+    background: transparent;
+    transition: all 0.3s linear;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+      background: @color;
+    }
+  }
+}
+
+.underlineRemove(@color, @height, @bottom) {
+  position: relative;
+  display: inline-block;
+  padding-bottom: @bottom;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background: @color;
+    bottom: 0;
+    height: @height;
+    width: 100%;
+    display: block;
+    transition: all 0.3s linear;
+  }
+
+  &:hover {
+    &:after {
+      width: 0;
+    }
+  }
+}
+
+.underlineColorChange(@color, @colorHover, @height, @bottom) {
+  position: relative;
+  display: inline-block;
+  padding-bottom: @bottom;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background: @color;
+    bottom: 0;
+    height: @height;
+    width: 100%;
+    display: block;
+    transition: all 0.3s linear;
+  }
+
+  &:hover {
+    &:after {
+      background: @colorHover;
+    }
+  }
+}
+
+.overflow-x() {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.overflow-y() {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sr-only() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// ******** Mixins ******** //

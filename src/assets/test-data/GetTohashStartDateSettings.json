@@ -1,0 +1,8 @@
+{
+  "IsValid": true,
+  "Content": {
+    "MinStartLearningDate": "3",
+    "MaxStartLearningDate": "1"
+  },
+  "Properties": {}
+}

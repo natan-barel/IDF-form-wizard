@@ -1,0 +1,30 @@
+<div class="simple-dialog icon-dialog">
+  <div class="dialog-icon circle-wrapper">
+    <img
+      src="/ClientBundledApps/tohash/assets/img/{{ _data.iconName }}.png"
+      alt=""
+    />
+  </div>
+  <h2 class="simple-dailog-header centered-content">{{ _data.header }}</h2>
+  <div class="simple-dailog-content">
+    {{ _data.content }}
+  </div>
+  <a
+    *ngIf="_data.link"
+    class="btn btn--link centered-content"
+    [href]="_data.link.href"
+  >
+    {{ _data.link.text }}
+  </a>
+  <div class="modal-btns" *ngIf="_data.buttons">
+    <button
+      *ngFor="let btn of _data.buttons"
+      type="button"
+      [ngClass]="btn.cssClass"
+      class="btn btn--limited-wide"
+      [mat-dialog-close]="btn.actions.close"
+    >
+      {{ btn.label }}
+    </button>
+  </div>
+</div>
